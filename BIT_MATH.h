@@ -1,0 +1,16 @@
+/**
+ ******************************************************************************
+ * @File           : BIT_MATH.h
+ * @Created on     : Aug 23, 2023
+ * @Author         : Mahmoud Yasser
+ ******************************************************************************
+ */
+#ifndef BIT_MATH_H_
+#define BIT_MATH_H_
+
+#define SET_BIT(REG,BIT) (REG |= (1<<BIT))
+#define CLR_BIT(REG,BIT) (REG &= (~(1<<BIT)))
+#define Toggle_Bit(REG,BIT) (REG ^= (1<<BIT))
+#define GET_BIT(REG,bit) ((REG>>bit)&1)
+
+#endif
